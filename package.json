@@ -1,0 +1,21 @@
+{
+  "name": "react-native-matgraph",
+  "version": "1.0.0",
+  "description": "This library help you show the data in graphs of line or bar",
+  "main": "index.js",
+  "repository": "git@github.com:MatheoNieto/react-native-matgraph.git",
+  "author": "Mateo Nieto <matheo.developer@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@types/react-native": "^0.71.5",
+    "react-native": "^0.71.4",
+    "typescript": "^5.0.2"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-safe-area-context": "*",
+    "react-native-vector-icons": "*"
+  }
+}
