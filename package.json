@@ -2,14 +2,39 @@
   "name": "react-native-matgraph",
   "version": "1.0.0",
   "description": "This library help you show the data in graphs of line or bar",
+  "keywords": [
+    "Line graph",
+    "Bar graph",
+    "android",
+    "ios",
+    "react native",
+    "component library"
+  ],
   "main": "index.js",
   "repository": "git@github.com:MatheoNieto/react-native-matgraph.git",
+  "bugs": {
+    "url": "git@github.com:MatheoNieto/react-native-matgraph.git/issues"
+  },
   "author": "Mateo Nieto <matheo.developer@gmail.com>",
   "license": "MIT",
+  "source": "src/index.tsx",
+  "files": [
+    "src", "lib"
+  ],
+  "types": "lib/typescript/src/index.d.ts",
+  "scripts": {
+    "typescript": "tsc --noEmit",
+    "lint": "yarn lint-no-fix --fix",
+    "lint-no-fix": "eslint --ext '.js,.ts,.tsx' ."
+  },
   "devDependencies": {
     "@babel/core": "^7.21.3",
+    "@types/react-dom": "^18.0.11",
     "@types/react-native": "^0.71.5",
+    "eslint": "^8.37.0",
+    "prettier": "^2.8.7",
     "react-native": "^0.71.4",
+    "react-native-builder-bob": "^0.20.4",
     "typescript": "^5.0.2"
   },
   "peerDependencies": {
@@ -17,5 +42,23 @@
     "react-native": "*",
     "react-native-safe-area-context": "*",
     "react-native-vector-icons": "*"
+  },
+
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
+    ],
+    "files": [
+      "src/"
+    ]
   }
 }
