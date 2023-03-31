@@ -19,7 +19,8 @@
   "license": "MIT",
   "source": "src/index.tsx",
   "files": [
-    "src", "lib"
+    "src",
+    "lib"
   ],
   "types": "lib/typescript/src/index.d.ts",
   "scripts": {
@@ -32,7 +33,9 @@
     "@types/react-dom": "^18.0.11",
     "@types/react-native": "^0.71.5",
     "eslint": "^8.37.0",
+    "expo": "^48.0.9",
     "prettier": "^2.8.7",
+    "react": "^18.2.0",
     "react-native": "^0.71.4",
     "react-native-builder-bob": "^0.20.4",
     "typescript": "^5.0.2"
@@ -43,7 +46,6 @@
     "react-native-safe-area-context": "*",
     "react-native-vector-icons": "*"
   },
-
   "react-native-builder-bob": {
     "source": "src",
     "output": "lib",
@@ -60,5 +62,11 @@
     "files": [
       "src/"
     ]
+  },
+  "dependencies": {
+    "react-native-reanimated": "^3.0.2",
+    "react-native-redash": "^18.1.0",
+    "react-native-skeleton-placeholder": "^5.2.4",
+    "react-native-svg": "^13.8.0"
   }
 }
